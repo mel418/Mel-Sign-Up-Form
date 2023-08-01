@@ -3,8 +3,14 @@ body {
     overflow: hidden;
 
 }
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
 .background {
-    background-image: linear-gradient(rgb(255,202,236), rgb(255, 94, 196));
+    background-image: linear-gradient(rgb(142, 38, 103), rgb(151, 64, 119));
     overflow: hidden;
     top: 0;
 }
@@ -20,21 +26,63 @@ body {
 .image-sidebar {
     display: grid;
     place-items: center;
-    background-image: linear-gradient(rgb(253, 121, 205), rgb(255,202,236));
-    border-right: rgb(255, 243, 251);
+    background-image: linear-gradient(rgb(252, 158, 217),rgb(254, 87, 193)); 
+    border-right: 0.25vh solid rgb(255, 185, 229);
 
 }
 
 .image-sidebar > img {
-    width: calc(60%);
+    width: calc(35%);
+    border: 1vh solid white;
+    border-radius: 30px;
+    box-shadow: 8px 8px 5px rgb(0,0,0,.3);
+    background-image: linear-gradient(rgb(252, 158, 217),rgb(254, 87, 193));
 }
 
 .form-container {
     width: 50vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 50px;
+    
 }
 
 .form-header {
     grid-column: 1/-1;
+    color: white;
+    font-size: 40px;
+    font-weight: 1000;
+    letter-spacing: .05em;
+
+}
+
+.input-container {
+    position: relative;
+}
+
+input {
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 1px solid rgb(66, 53, 61);
+    border-radius: 5px;
+    padding: 6px 6px 6px 10px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.759);
+}
+
+input:focus {
+    outline:none;
+    border: 1px solid rgb(255, 185, 229);
+}
+
+span {
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
 }
