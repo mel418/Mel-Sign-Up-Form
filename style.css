@@ -35,7 +35,7 @@ body {
     width: calc(35%);
     border: 1vh solid white;
     border-radius: 30px;
-    box-shadow: 8px 8px 5px rgb(0,0,0,.3);
+    box-shadow: 5px 5px 5px rgb(0,0,0,.3);
     background-image: linear-gradient(rgb(252, 158, 217),rgb(254, 87, 193));
 }
 
@@ -52,7 +52,7 @@ body {
     grid-column: 1/-1;
     color: white;
     font-size: 40px;
-    font-weight: 1000;
+    font-weight: 900;
     letter-spacing: .05em;
 
 }
@@ -68,6 +68,7 @@ input {
     border-bottom: 1px solid rgb(66, 53, 61);
     border-radius: 5px;
     padding: 6px 6px 6px 10px;
+    padding-right: 40px;
     margin-top: 5px;
     color: rgba(255, 255, 255, 0.759);
 }
@@ -75,6 +76,7 @@ input {
 input:focus {
     outline:none;
     border: 1px solid rgb(255, 185, 229);
+    box-shadow: 8px 8px 5px rgb(0,0,0,.3);
 }
 
 span {
@@ -85,4 +87,38 @@ span {
     font-size: 15px;
     font-weight: 500;
     padding: 10px;
+    white-space: nowrap;
+    user-select: none;
+    letter-spacing: 0.05em;
+    transition: all 0.5s;
+}
+
+input:focus ~ span,
+input:valid ~ span{
+    font-size: 10px;
+    transform: translateX(4px) translateY(-7px);
+    font-size: 0.80em;
+    padding: 0 6px;
+    color: var(--cyny-green);
+    background-color: rgb(252, 158, 217);
+    color: white;
+    border-radius: 2px;
+}
+input:focus,
+input:focus-visible {
+    border: 1px solid  rgb(252, 158, 217);
+    box-shadow: 0 0 5px rgb(0,0,0,.3);
+    outline: none;
+}
+input:valid {
+    border: 1px solid rgb(252, 158, 217);  
+}
+
+button {
+    background-color: rgb(151,121,211);
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 0 5px rgb(0,0,0,.3);
+    font-size: 1.5em;
+    font-weight: 500;
 }
