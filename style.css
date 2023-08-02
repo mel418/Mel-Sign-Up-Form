@@ -16,7 +16,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: calc(100% - 60%) auto;
+    grid-template-columns: calc(100% - 70%) auto;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -31,12 +31,20 @@ body {
 
 }
 
+.image-sidebar > h1 {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: .05em;
+    align-self: flex-end;
+}
+
 .image-sidebar > img {
     width: calc(35%);
     border: 1vh solid white;
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgb(0,0,0,.3);
     background-image: linear-gradient(rgb(252, 158, 217),rgb(254, 87, 193));
+    align-self: flex-start;
 }
 
 .form-container {
